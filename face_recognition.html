@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Face Recognition Project Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">HOME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home Page</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">March 25, 2023</span>
+									<h2><a>Data Science Project<br /></a></h2>
+										<a>FACE RECOGNITION<br /></a>
+									<p><strong>Role:</strong> Team leader, responsible for the main project idea development and core coding implementation.</p>
+									<p><strong>Achievement:</strong> Second Place in Scientific Research.</p>
+								</header>
+
+								<!-- Data Processing -->
+								<p>
+									The process of transforming raw data into data ready for training deep learning models follows a rigorous and systematic workflow consisting of the following steps.
+								</p>
+
+								<div class="image main"><img src="images/pic014_nckh_face.png" alt="Databricks Project" /></div>
+
+								<p>
+									<strong>Step 1: Data Selection and Collection</strong><br />
+									Data source: The KTFE (Kotani Thermal Facial Emotions) dataset is used. The research team selected four classroom-related emotions: Happy, Sad, Surprise, and Neutral, while excluding strong negative emotions such as fear, anger, and disgust.
+								</p>
+
+								<p>
+									<strong>Step 2: Pre-processing</strong><br />
+									Facial regions are detected and cropped using the Haar Cascade algorithm. The cropped images with a size of 48 by 48 pixels are converted to grayscale to reduce computational complexity and improve model accuracy.
+								</p>
+
+								<p>
+									<strong>Step 3: Data Classification and Grouping</strong><br />
+									Emotions are first classified by intensity levels, then grouped into four interest levels, and finally merged into two feedback classes: Positive and Negative.
+								</p>
+
+								<p>
+									<strong>Step 4: Labeling and Dataset Splitting</strong><br />
+									Data are labeled numerically with Negative as 0 and Positive as 1, then split into training, validation, and testing sets.
+								</p>
+
+								</p>
+
+								<!-- AI Model -->
+								<a class="image main"><img src="images/pic015_nckh_resnet.png" alt="" /></a>
+								<p>
+									The ResNet-18 (Residual Network with 18 layers) architecture is proposed for use in this study to support
+									facial expression based learner feedback evaluation.
+								</p>
+
+								<h4>Reasons for Selection</h4>
+								<ul>
+									<li>
+										ResNet addresses the vanishing gradient problem in very deep networks through the use of shortcut
+										connections or identity shortcuts.
+									</li>
+									<li>
+										The ResNet-18 architecture supports grayscale image inputs, making it suitable for the collected dataset,
+										whereas other ResNet variants typically require RGB color images.
+									</li>
+									<li>
+										It performs effectively on small scale datasets and achieves high accuracy within a relatively short
+										training time.
+									</li>
+									<li>
+										The testing accuracy reached 98.25%, which is higher than the 96.5% achieved by the
+										six layer CNN model.
+									</li>
+									<li>
+										The F1 score reached 98% and was well balanced for both the Positive and Negative labels,
+										indicating reliable and consistent performance across both classes.
+									</li>
+								</ul>
+								<h3>Table result: Precision, Recall, and F1-score of the ResNet-18 Model</h3>
+								<table class="metrics-table">
+									<thead>
+										<tr>
+											<th>Interest Level</th>
+											<th>Precision</th>
+											<th>Recall</th>
+											<th>F1-score</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Negative</td>
+											<td>96%</td>
+											<td>100%</td>
+											<td>98%</td>
+										</tr>
+										<tr>
+											<td>Positive</td>
+											<td>100%</td>
+											<td>97%</td>
+											<td>98%</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<a class="image main"><img src="images/pic016_nckh_face_result.png" alt="" /></a>
+							</section>
+
+						<ul class="actions special">
+							<li><a href="https://drive.google.com/file/d/1bdTaGceX4F04j80Yt46F69O86b0YtY6B/view?usp=sharing" class="button large">Link Report</a></li>
+						</ul>
+						
+						<!-- Tech Stack Section -->
+							<section class="post">
+								<header class="major">
+									<h2>Tech Stack<br /></h2>
+								</header>
+								<ul>
+									<li><strong>Progamming Language & Libraries/Frameworks:</strong>
+										<ul>
+											<li>Python</li>
+											<li>OpenCV3</li>
+											<li>Keras</li>
+											<li>Tensorflow</li>
+											<li>Pandas</li>
+										</ul>
+									</li>
+									<li><strong>Development Tools:</strong>
+										<ul>
+											<li>Jupyter Notebook</li>
+											<li>Google Colab, Kaggle Notebook</li>
+										</ul>
+									</li>
+									<li><strong>Algorithms & Models:</strong>
+										<ul>
+											<li>Haar Cascade: Face detection and cropping from images or webcam.</li>
+											<li>CNN (Convolutional Neural Network): Deep learning model</li>
+										</ul>
+									</li>
+									<li><strong>Version Control:</strong>
+										<ul>
+											<li>GitHub: Source code management</li>
+										</ul>
+									</li>
+									<li><strong>System & Hardware Deployment:</strong>
+										<ul>
+											<li>Local: CPU Intel(R) Core (TM) i5-1035G4 CPU @ 1.10GHz & RAM 8.0 GB</li>
+											<li>Input: Webcam</li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+						
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Ho CHi Minh City, Viet Nam<br /></p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a>(+84) 962 774 824</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a>caotrung8134@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/trung8134" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a>CAO DUC TRUNG</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

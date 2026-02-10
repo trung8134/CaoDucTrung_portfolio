@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Databricks Project Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">HOME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home Page</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">December, 2025</span>
+									<h1>Data Engineer Project<br />
+									Databricks Implementation</h1>
+									<p>This project involves leveraging Databricks to process and analyze data efficiently. The workflow includes appending data from AWS S3 to Databricks, processing it using the medallion architecture, and building insightful dashboards.</p>
+								</header>
+								<div class="image main"><img src="images/pic01.png" alt="Databricks Project" /></div>
+								<p>
+									Raw data is stored in AWS S3 and serves as the input data source for the system. 
+									From S3, data is ingested into Databricks and processed using a Lakehouse architecture with Bronze, Silver, and Gold layers. 
+									In the Bronze layer, raw data is ingested and stored for traceability. In the Silver layer, data is cleaned, standardized, and transformed for analytical purposes. 
+									In the Gold layer, data is aggregated and optimized for business analysis.
+								</p>
+								<p>
+									The Gold data from the Child Company is then consolidated and loaded into the Gold Analytics table of the Parent Company. 
+									Finally, the curated data is exposed through the Serving Layer to build dashboards and analytical reports, supporting business decision making.
+								</p>
+
+								<a href="#" class="image main"><img src="images/pic012.png" alt="" /></a>
+
+								<p>Designed an incremental refresh pipeline using the Bronze-Silver-Gold architecture, where new data from AWS S3 is processed layer by layer and only incremental changes are refreshed. 
+									This approach optimizes processing time, reduces computational cost, and ensures the Gold layer is always ready for analytics and reporting.
+								</p>
+							</section>
+												
+						<!-- Insights Report -->
+						<section class="post">
+							<header class="major">
+								<h2>Performance Overview<br /></h2>
+								<p>This dashboard provides a comprehensive view of business performance, highlighting key metrics and trends derived from data analysis.</p>
+							</header>
+							<div class="image main"><img src="images/pic011.png" alt="FMCG Dashboard" /></div>
+							<p><strong>Key Metrics:</strong></p>
+							<ul>
+								<li>Total Revenue: 105.34B</li>
+								<li>Total Quantity Sold: 34.13M</li>
+								<li>Unique Customers: 54</li>
+								<li>Average Selling Price: 4043.16</li>
+							</ul>
+							<p><strong>Descriptive Analysis:</strong></p>
+							<ul>
+								<li><strong>Top Products:</strong> "RC One Crystal Racing Gloves" and "Nike Limited Cricket Bat" lead in revenue generation.</li>
+								<li><strong>Effective Sales Channels:</strong> Retail channel contributes the largest share of revenue (71.46%).</li>
+								<li><strong>Revenue Trends:</strong> Significant revenue growth observed in December.</li>
+								<li><strong>Key Customers:</strong> "Fitness World" and "FastTrack Sports" are major contributors to revenue.</li>
+								<li><strong>Product Variants:</strong> "Large" variant generates the highest revenue, indicating strong demand.</li>
+								<li><strong>Price vs Quantity:</strong> Products priced between 4000-6000 have the highest sales volume.</li>
+							</ul>
+						</section>
+
+						<!-- Practical Actions -->
+							<section class="post">
+								<h3>Recommended Actions<br /></h3>
+								<ul>
+									<li><strong>Promote Top Products:</strong> Focus on marketing "RC One Crystal Racing Gloves" and "Nike Limited Cricket Bat" with discounts and promotions.</li>
+									<li><strong>Optimize Sales Channels:</strong> Invest in retail channels while exploring strategies to boost direct and online sales.</li>
+									<li><strong>Leverage Revenue Trends:</strong> Prepare marketing campaigns ahead of December to capitalize on peak revenue periods.</li>
+									<li><strong>Engage Key Customers:</strong> Strengthen relationships with major contributors like "Fitness World" and "FastTrack Sports" through personalized offers.</li>
+									<li><strong>Expand Product Variants:</strong> Focus on producing and promoting the "Large" variant to meet high demand.</li>
+									<li><strong>Adjust Pricing Strategy:</strong> Optimize product pricing within the 4000-6000 range to maximize sales volume.</li>
+									<li><strong>Enhance Data Strategy:</strong> Use dashboard data to build predictive models and integrate additional data sources for comprehensive analysis.</li>
+								</ul>
+							</section>
+
+						<!-- Tech Stack Section -->
+							<section class="post">
+								<header class="major">
+									<h2>Tech Stack<br /></h2>
+								</header>
+								<ul>
+									<li><strong>Progamming Language:</strong>
+										<ul>
+											<li>Pyspark, Sql Query, Notebook</li>
+										</ul>
+									</li>
+									<li><strong>Data Engineering:</strong>
+										<ul>
+											<li>Databricks: Data processing and Medallion architecture (Bronze, Silver, Gold)</li>
+											<li>AWS S3: Data storage and integration</li>
+										</ul>
+									</li>
+									<li><strong>Dashboard & Visualization:</strong>
+										<ul>
+											<li>Data Modeling following Star Schema</li>
+											<li>Dashboard tools in Databricks</li>
+										</ul>
+									</li>
+									<li><strong>Version Control:</strong>
+										<ul>
+											<li>GitHub: Source code management</li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+
+						<ul class="actions special">
+							<li><a href="https://github.com/trung8134/Databricks_fmcg.git" class="button large">Link Github</a></li>
+						</ul>
+						
+						
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Ho CHi Minh City, Viet Nam<br /></p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a>(+84) 962 774 824</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a>caotrung8134@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/trung8134" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a>CAO DUC TRUNG</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>XAI Model Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">HOME</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Home Page</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">April, 2024</span>
+									<h2><a>DATA SCIENCE PROJECT<br /></a></h2>
+										<a>AN EXPLAINABLE DEEP LEARNING MODEL<br /></a>
+									<p><strong>Role:</strong> Team leader, responsible for the main project idea development and core coding implementation.</p>
+									<p><strong>Achievement:</strong> Honorable Mention in Scientific Research.</p>
+								</header>
+
+								<!-- Data Processing -->
+								<p>
+									The entire data processing pipeline from input to output is designed to support prediction and interpretation of deep learning model results, following a rigorous and systematic workflow that includes the following steps.
+								</p>
+
+								<div class="image main"><img src="images/pic21_nckh_xAI_Model_BG.jpg" alt="Project Pipeline" /></div>
+
+								<h3>Data Information</h3>
+								<table>
+									<thead>
+										<tr>
+											<th>Class</th>
+											<th>Samples</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Rice</td>
+											<td>4078</td>
+										</tr>
+										<tr>
+											<td>Wheat</td>
+											<td>3679</td>
+										</tr>
+										<tr>
+											<td>Corn</td>
+											<td>3852</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<h3>Dataset for Training and Evaluation</h3>
+								<p>
+									I evaluated the proposed model on a dataset of three important food crops collected from multiple research papers and Kaggle. Additionally, several diseased plant images were manually annotated to support the evaluation of the Intersection over Union (IoU) metric.
+								</p>
+								<ul>
+									<li>
+										The Crop Diseases dataset contains 11,609 images across three crop species: maize, rice, and wheat. It includes eight classes of diseased plants and three classes of healthy plants. Maize images were obtained from the publicly available PlantVillage dataset [3], featuring a black background and close-up shots, while the remaining crops have varied backgrounds that more closely resemble natural environments.
+									</li>
+									<li>
+										The dataset was divided into training, validation, and testing sets using a 60/20/20 split. The training set contains 6,965 images, while both the validation and test sets include 2,322 images each.
+									</li>
+									<li>
+										For IoU evaluation, 10 images were randomly sampled from each disease class and annotated with segmentation masks highlighting the diseased regions. In total, 80 annotated images were prepared across eight disease classes without prior manual selection.
+									</li>
+								</ul>
+
+								<h3>Model Performance Comparison</h3>
+								<table>
+									<thead>
+										<tr>
+											<th>Model</th>
+											<th>Parameters</th>
+											<th>F1-Score (%)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>ResNet50</td>
+											<td>25.6M</td>
+											<td>91.27</td>
+										</tr>
+										<tr>
+											<td>VGG16</td>
+											<td>14.72M</td>
+											<td>90.96</td>
+										</tr>
+										<tr>
+											<td>EfficientNetV2B0</td>
+											<td>7.2M</td>
+											<td>93.46</td>
+										</tr>
+										<tr>
+											<td>MobileNetV2</td>
+											<td>3.5M</td>
+											<td>90.23</td>
+										</tr>
+										<tr>
+											<td>ResNet50 + CBAM</td>
+											<td>28.09M</td>
+											<td>93.57</td>
+										</tr>
+										<tr>
+											<td><strong>VGG16CBAM_bn (Our Proposed)</strong></td>
+											<td><strong>15.07M</strong></td>
+											<td><strong>94.75</strong></td>
+										</tr>
+									</tbody>
+								</table>
+								
+								<h3>Visualization results with Grad-CAM and XRAI for model explainability.</h3>
+								<a class="image main"><img src="images/pic22_nckd_xai_visualize.png" alt="" /></a>
+								<p>
+								The visualization results demonstrate that both Grad-CAM and XRAI provide meaningful insights into the model's decision-making process by highlighting regions associated with plant diseases. 
+								Grad-CAM effectively captures high-level discriminative areas, allowing quick identification of where the model focuses when making predictions. 
+								However, its heatmaps are relatively coarse and may sometimes extend beyond the true diseased regions.
+								</p>
+
+								<p>
+								In contrast, XRAI generates more precise and structured segmentation maps, enabling clearer localization of infected areas on plant leaves. 
+								This finer granularity indicates stronger interpretability, helping verify that the model relies on biologically relevant features rather than background noise. 
+								Overall, while Grad-CAM is valuable for rapid visual explanations, XRAI delivers more detailed and reliable interpretations, thereby increasing trust in the model's predictions.
+								</p>
+
+							</section>
+
+						<ul class="actions special">
+							<li><a href="https://jst.tnu.edu.vn/jst/article/view/11353" class="button large">Link Paper</a></li>
+						</ul>
+
+						<!-- Tech Stack Section -->
+							<section class="post">
+								<header class="major">
+									<h2>Tech Stack<br /></h2>
+								</header>
+								<ul>
+									<li><strong>Progamming Language & Libraries/Frameworks:</strong>
+										<ul>
+											<li>Python</li>
+											<li>OpenCV3</li>
+											<li>Keras</li>
+											<li>Tensorflow</li>
+											<li>Pytorch</li>
+											<li>Pandas</li>
+										</ul>
+									</li>
+									<li><strong>Development Tools:</strong>
+										<ul>
+											<li>Jupyter Notebook</li>
+											<li>Google Colab, Kaggle Notebook</li>
+											<li>Docker</li>
+										</ul>
+									</li>
+									<li><strong>Algorithms & Models:</strong>
+										<ul>
+											<li>Data Labeling</li>
+											<li>Python Image Processing</li>
+											<li>CBAM Deep Learning Architecture</li>
+											<li>CNN (Convolutional Neural Network): Deep learning model</li>
+										</ul>
+									</li>
+									<li><strong>Version Control:</strong>
+										<ul>
+											<li>GitHub: Source code management</li>
+										</ul>
+									</li>
+									<li><strong>System & Hardware Deployment:</strong>
+										<ul>
+											<li>Local: CPU Intel(R) Core (TM) i5-1035G4 CPU @ 1.10GHz & RAM 8.0 GB</li>
+											<li>Input: Webcam, Image</li>
+											<li>Output: Analysis Visualization, Predict text</li>
+										</ul>
+									</li>
+								</ul>
+							</section>
+						
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section class="alt">
+								<h3>Address</h3>
+								<p>Ho CHi Minh City, Viet Nam<br /></p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a>(+84) 962 774 824</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a>caotrung8134@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="https://github.com/trung8134" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a>CAO DUC TRUNG</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
